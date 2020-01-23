@@ -11,12 +11,14 @@ fields:
 - type: text
   name: author
   label: author
+  description: 'Ex: John Doe'
 - type: text
   name: image_webp
-  label: image_webp
+  label: image webp
 - type: file
   name: image
   label: image
 - type: text
   name: description
   label: description
+  description: meta description
