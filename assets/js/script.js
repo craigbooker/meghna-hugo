@@ -1,20 +1,17 @@
+/* ========================================================================= */
+/*	Page Preloader
+/* ========================================================================= */
+
+$(window).on('load', function () {
+	$('.preloader').fadeOut(10);
+});
+
 jQuery(function ($) {
 	"use strict";
-
-	/* ========================================================================= */
-	/*	Page Preloader
-	/* ========================================================================= */
-
-	$(window).on('load', function () {
-		$('.preloader').fadeOut(100);
-	});
-
 
 	// lazy load initialize
 	const observer = lozad(); // lazy loads elements with default selector as ".lozad"
 	observer.observe();
-
-
 
 	/* ========================================================================= */
 	/*	Magnific popup
@@ -37,22 +34,23 @@ jQuery(function ($) {
 	/* ========================================================================= */
 	/*	Portfolio Filtering Hook
 	/* =========================================================================  */
-  function filter(){
-	var containerEl = document.querySelector('.shuffle-wrapper');
-	if (containerEl) {
-		var Shuffle = window.Shuffle;
-		var myShuffle = new Shuffle(document.querySelector('.shuffle-wrapper'), {
-			itemSelector: '.shuffle-item',
-			buffer: 1
-		});
+	function filter() {
+		var containerEl = document.querySelector('.shuffle-wrapper');
+		if (containerEl) {
+			var Shuffle = window.Shuffle;
+			var myShuffle = new Shuffle(document.querySelector('.shuffle-wrapper'), {
+				itemSelector: '.shuffle-item',
+				buffer: 1
+			});
 
-		jQuery('input[name="shuffle-filter"]').on('change', function (evt) {
-			var input = evt.currentTarget;
-			if (input.checked) {
-				myShuffle.filter(input.value);
-			}
-		});
-	}}
+			jQuery('input[name="shuffle-filter"]').on('change', function (evt) {
+				var input = evt.currentTarget;
+				if (input.checked) {
+					myShuffle.filter(input.value);
+				}
+			});
+		}
+	}
 	$(window).on('scroll', function () {
 		filter();
 	});
