@@ -14,29 +14,29 @@ disableLanguages = []
 ############################# Plugins ##########################
 # css plugins
 [[params.plugins.css]]
-URL = "plugins/bootstrap/bootstrap.min.css"
+link = "plugins/bootstrap/bootstrap.min.css"
 [[params.plugins.css]]
-URL = "plugins/themify-icons/themify-icons.css"
+link = "plugins/themify-icons/themify-icons.css"
 [[params.plugins.css]]
-URL = "plugins/animate-css/animate.css"
+link = "plugins/animate-css/animate.css"
 [[params.plugins.css]]
-URL = "plugins/magnific-popup/magnific-popup.css"
+link = "plugins/magnific-popup/magnific-popup.css"
 [[params.plugins.css]]
-URL = "plugins/slick/slick.css"
+link = "plugins/slick/slick.css"
 
 # js plugins
 [[params.plugins.js]]
-URL = "plugins/jquery/jquery.min.js"
+link = "plugins/jquery/jquery.min.js"
 [[params.plugins.js]]
-URL = "plugins/bootstrap/bootstrap.min.js"
+link = "plugins/bootstrap/bootstrap.min.js"
 [[params.plugins.js]]
-URL = "plugins/slick/slick.min.js"
+link = "plugins/slick/slick.min.js"
 [[params.plugins.js]]
-URL = "plugins/shuffle/shuffle.min.js"
+link = "plugins/shuffle/shuffle.min.js"
 [[params.plugins.js]]
-URL = "plugins/magnific-popup/jquery.magnific-popup.min.js"
+link = "plugins/magnific-popup/jquery.magnific-popup.min.js"
 [[params.plugins.js]]
-URL = "plugins/wow/wow.min.js"
+link = "plugins/wow/wow.min.js"
 
 ############################# Navigation ##################################
 [[menu.main]]
@@ -83,7 +83,7 @@ logo = "images/logo.png"
 description = "Responsive Multipurpose Parallax HTML5 Template"
 author = "Themefisher"
 # Google Analitycs
-googleAnalitycsID = "Your ID"
+google_analitycs_id = "Your ID"
 # post share
 postShare = true
 
@@ -93,27 +93,27 @@ enable = true
 preloader = "images/logo.png"
 
 ############################# social icons ##########################
-[[params.social_Icon]]
+[[params.social]]
 icon = "ti-facebook" # themify icon pack : https://themify.me/themify-icons
 link = "#"
 
-[[params.social_Icon]]
+[[params.social]]
 icon = "ti-twitter-alt" # themify icon pack : https://themify.me/themify-icons
 link = "#"
 
-[[params.social_Icon]]
+[[params.social]]
 icon = "ti-youtube" # themify icon pack : https://themify.me/themify-icons
 link = "#"
 
-[[params.social_Icon]]
+[[params.social]]
 icon = "ti-linkedin" # themify icon pack : https://themify.me/themify-icons
 link = "#"
 
-[[params.social_Icon]]
+[[params.social]]
 icon = "ti-dribbble" # themify icon pack : https://themify.me/themify-icons
 link = "#"
 
-[[params.social_Icon]]
+[[params.social]]
 icon = "ti-pinterest" # themify icon pack : https://themify.me/themify-icons
 link = "#"
 
