@@ -53,15 +53,6 @@
 			</div>
 		</div>
 	</div>
-
-	{{ if .map.enable }}
-	{{ with .map }}
-	{{"<!-- Google Map -->" | safeHTML}}
-	<div class="google-map">
-		<div id="map-canvas" data-latitude="{{ .map_latitude }}" data-longitude="{{ .map_longitude }}"></div>
-	</div>
-	{{ end }}
-	{{ end }}
 </section>
 {{"<!-- /contact -->" | safeHTML}}
 {{ end }}

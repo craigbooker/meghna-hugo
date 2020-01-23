@@ -27,11 +27,9 @@
 </footer>
 {{"<!-- /footer -->" | safeHTML}}
 
-{{"<!-- Essential Scripts -->" | safeHTML}}
-{{"<!-- Google Map API -->" | safeHTML}}
-{{ $data := index .Site.Data .Site.Language.Lang }}
-{{ if $data.contact.contact.map.enable }}
-<script type="text/javascript"  src="{{ $data.contact.contact.map.gmap_api | absURL }}"></script>
+{{ "<!-- Google Map API -->" | safeHTML }}
+{{ if .Site.Params.map.enable }}
+<script src="{{ .Site.Params.map.gmap_api | safeURL }}"></script>
 {{ end }}
 
 {{ "<!-- JS Plugins -->" | safeHTML }}
