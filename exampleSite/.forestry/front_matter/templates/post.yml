@@ -12,7 +12,7 @@ fields:
   name: author
   label: author
   description: 'Ex: John Doe'
-- type: text
+- type: file
   name: image_webp
   label: image webp
 - type: file
